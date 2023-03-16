@@ -1,0 +1,39 @@
+<h3>
+    Objects
+</h3>
+<p>
+    
+ Objects are physical or logical entities that contain data and functions that act on that data.
+ C++ objects are instances of classes, where classes define the data and behaviour of a particular object.
+</p>
+<pre>
+    <code>"{{ "{" }}"
+        class MyClass "{{ '{' }}"
+            private:
+                int myInt;
+                float myFloat;
+            public:
+                MyClass(int i, float f) "{{ '{' }}"
+                    myInt = i;
+                    myFloat = f;
+                    "{{ '}' }}"
+                void printValues() "{{ '{' }}"
+                    cout &lt;&lt; "My integer value is: " &lt;&lt; myInt &lt;&lt; endl;
+                    cout &lt;&lt; "My float value is: " &lt;&lt; myFloat &lt;&lt; endl;
+                "{{ '}' }}"
+        "{{ '}' }}";   
+     </code>
+</pre>
+<p>
+    In this example, the  MyClass  class has two private member variables,  myInt  and  myFloat . The constructor takes in an integer and a float value and assigns them to the member variables. There is also a public member function,  printValues() , that prints out the values of the member variables.
+To create an object of the  MyClass  class, you would do something like this:
+</p>
+<pre>
+    <code>
+        MyClass myObject(42, 3.14);
+        myObject.printValues();    </code>
+</pre>
+<p>
+    This would create an object called  myObject  with an integer value of 42 and a float value of 3.14, and then call the  printValues()  member function to print out those values.
+</p>
+
