@@ -16,6 +16,12 @@ import { PolymorphismComponent } from './components/polymorphism/polymorphism.co
 import { PointersComponent } from './components/pointers/pointers.component';
 import { InheritanceComponent } from './components/inheritance/inheritance.component';
 import { AbstractionComponent } from './components/abstraction/abstraction.component';
+import { OopConceptsComponent } from './components/oop-concepts/oop-concepts.component';
+import { LoopsComponent } from './components/loops/loops.component';
+import { ForLoopComponent } from './components/for-loop/for-loop.component';
+import { WhileLoopComponent } from './components/while-loop/while-loop.component';
+import { DoWhileLoopComponent } from './components/do-while-loop/do-while-loop.component';
+import { ClassComponent } from './components/class/class.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +38,13 @@ import { AbstractionComponent } from './components/abstraction/abstraction.compo
     PolymorphismComponent,
     PointersComponent,
     InheritanceComponent,
-    AbstractionComponent
+    AbstractionComponent,
+    OopConceptsComponent,
+    LoopsComponent,
+    ForLoopComponent,
+    WhileLoopComponent,
+    DoWhileLoopComponent,
+    ClassComponent
   ],
   imports: [
     BrowserModule,
