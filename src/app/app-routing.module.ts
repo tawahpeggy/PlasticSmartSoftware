@@ -12,6 +12,9 @@ import { LoopsComponent } from './components/loops/loops.component';
 import { ObjectsComponent } from './components/objects/objects.component';
 import { OopConceptsComponent } from './components/oop-concepts/oop-concepts.component';
 import { PolymorphismComponent } from './components/polymorphism/polymorphism.component';
+import { LinuxComponent } from './components/setup/linux/linux.component';
+import { MaccComponent } from './components/setup/macc/macc.component';
+import { WindowsComponent } from './components/setup/windows/windows.component';
 import { WhileLoopComponent } from './components/while-loop/while-loop.component';
 import { BlogComponent } from './pages/blog/blog.component';
 
@@ -29,6 +32,9 @@ const routes: Routes = [
   {  path: 'abstraction', component: AbstractionComponent},
   {  path: 'about', component: AboutComponent},
   {  path: 'comments', component: CommentsComponent},
+  {  path: 'windows', component: WindowsComponent},
+  {  path: 'linux', component: LinuxComponent},
+  {  path: 'macc', component: MaccComponent},
   { path: 'C', component: BlogComponent}
 ];
 

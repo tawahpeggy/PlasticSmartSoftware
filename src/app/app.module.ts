@@ -22,6 +22,9 @@ import { ForLoopComponent } from './components/for-loop/for-loop.component';
 import { WhileLoopComponent } from './components/while-loop/while-loop.component';
 import { DoWhileLoopComponent } from './components/do-while-loop/do-while-loop.component';
 import { ClassComponent } from './components/class/class.component';
+import { WindowsComponent } from './components/setup/windows/windows.component';
+import { LinuxComponent } from './components/setup/linux/linux.component';
+import { MaccComponent } from './components/setup/macc/macc.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import { ClassComponent } from './components/class/class.component';
     ForLoopComponent,
     WhileLoopComponent,
     DoWhileLoopComponent,
-    ClassComponent
+    ClassComponent,
+    WindowsComponent,
+    LinuxComponent,
+    MaccComponent
   ],
   imports: [
     BrowserModule,
