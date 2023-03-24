@@ -25,6 +25,10 @@ import { ClassComponent } from './components/class/class.component';
 import { WindowsComponent } from './components/setup/windows/windows.component';
 import { LinuxComponent } from './components/setup/linux/linux.component';
 import { MaccComponent } from './components/setup/macc/macc.component';
+import { FunctionComponent } from './components/function/function.component';
+import { VectorComponent } from './components/vector/vector.component';
+import { DataTypeComponent } from './components/data-type/data-type.component';
+import { VariableComponent } from './components/variable/variable.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +54,11 @@ import { MaccComponent } from './components/setup/macc/macc.component';
     ClassComponent,
     WindowsComponent,
     LinuxComponent,
-    MaccComponent
+    MaccComponent,
+    FunctionComponent,
+    VectorComponent,
+    DataTypeComponent,
+    VariableComponent
   ],
   imports: [
     BrowserModule,

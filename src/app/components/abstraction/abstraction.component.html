@@ -1,1 +1,67 @@
-<p>abstraction works!</p>
+<h3>
+    Abstraction
+</h3>
+<p>
+    Abstraction is one of the four fundamental concepts in object-oriented programming. <br>
+ It refers to the practice of hiding the complexity of the underlying implementation and exposing only the essential features of the object. <br>
+ This allows the user to interact with the object in a simple and intuitive way without needing to know how it works internally.
+</p>
+
+Here's an example code snippet in C++ that demonstrates abstraction:
+<pre class="code-block">
+    <code>
+        
+#include &lt;iostream&gt;
+using namespace std;
+
+// Abstract class
+class Shape {{"{"}}
+   public:
+      virtual void draw() = 0; // pure virtual function
+{{"}"}};
+
+// Concrete class
+class Rectangle : public Shape {{"{"}}
+   public:
+      void draw() {{"{"}}
+         cout << "Drawing a rectangle." << endl;
+      {{"}"}}
+{{"}"}};
+// Concrete class
+class Circle : public Shape {{"{"}}
+   public:
+      void draw() {{"{"}}
+         cout << "Drawing a circle." << endl;
+      {{"}"}}
+{{"}"}};
+
+// Main function
+int main() {{"{"}}
+   Shape* s1 = new Rectangle(); // Instantiate a rectangle object
+   s1->draw(); // Call the draw function on the rectangle object
+
+   Shape* s2 = new Circle(); // Instantiate a circle object
+   s2->draw(); // Call the draw function on the circle object
+
+   return 0;
+{{"}"}}
+    </code>
+</pre>
+ 
+<p>
+    In this example, we have an abstract class called  Shape  that contains a pure virtual function  draw(). 
+</p>
+<p> This means that any class that inherits from  Shape  must implement the  draw()  function. </p>
+<p>
+    We then have two concrete classes,  Rectangle  and  Circle , that inherit from  Shape  and provide their own implementation of the  draw()  function.
+
+</p>
+
+<p>
+    Finally, in the main function, we create objects of type  Rectangle  and  Circle  and call their  draw()  functions using a pointer of type  Shape*.
+
+</p>
+<p>
+    This allows us to interact with the objects in a simple and intuitive way without needing to know the underlying implementation details.
+
+</p>

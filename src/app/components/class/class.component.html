@@ -1,39 +1,51 @@
-<!-- Classes 
+<h3>
+  Classes 
 
-A class is a user-defined data type that encapsulates data and functions that operate on that data.
-It serves as a blueprint for creating objects, which are instances of the class.
+</h3>
+<p>A class is a user-defined data type that encapsulates data and functions that operate on that data.
+  It serves as a blueprint for creating objects, which are instances of the class.</p>
 
-class Person {
-  private:
-    std::string name;
-    int age;
-  
-  public:
-    Person(std::string n, int a) {
-      name = n;
-      age = a;
-    }
-  
-    void say_hello() {
-      std::cout << "Hello, my name is " << name << " and I am " << age << " years old." << std::endl;
-    }
-  
-    void set_age(int a) {
-      age = a;
-    }
-};
- 
+<pre class="code-block">
+  <code>
+    class Person {{"{"}}
+      private:
+        std::string name;
+        int age;
+      
+      public:
+        Person(std::string n, int a) {{"{"}}
+          name = n;
+          age = a;
+        {{"}"}}
+      
+        void say_hello() {{"{"}}
+          std::cout << "Hello, my name is " << name << " and I am " << age << " years old." << std::endl;
+      {{"  }"}}
+      
+        void set_age(int a) {{"{"}}
+          age = a;
+        {{"}"}}
+    {{"}"}};
+     
+  </code>
+</pre>
 
-This class is called "Person" and it has two private data members,
+<p>
+  This class is called <b>"Person"</b> and it has two private data members,
  a string for the person's name and an integer for their age. 
-The class has two public member functions: a constructor that takes a name and
- age as arguments and sets the corresponding data members,
- and a member function called "say\_hello" that prints out a message introducing the person. 
-The class also has a public member function called "set\_age" that allows the age to be changed.
+</p>
+<p>The class has two public member functions: a constructor that takes a name and
+  age as arguments and sets the corresponding data members,
+  and a member function called "say\_hello" that prints out a message introducing the person. 
+ The class also has a public member function called "set\_age" that allows the age to be changed.</p>
 
 Here's an example of how you could use this class:
 
-Person alice("Alice", 25);
+<pre class="code-block">
+  <code>
+    Person alice("Alice", 25);
 alice.say_hello(); // prints "Hello, my name is Alice and I am 25 years old."
 alice.set_age(30);
-alice.say_hello(); // prints "Hello, my name is Alice and I am 30 years old." -->
+alice.say_hello(); // prints "Hello, my name is Alice and I am 30 years old."
+  </code>
+</pre>

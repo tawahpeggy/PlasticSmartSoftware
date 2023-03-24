@@ -5,8 +5,54 @@ In C++, polymorphism is achieved through inheritance and virtual functions.
 </p>
 <p>Here's a code snippet that demonstrates polymorphism in C++:
 </p>
-<pre>
+<pre class="code-block">
     <code>
-        
+        #include &lt;iostream&gt;
+            using namespace std;
+            
+            class Animal {{"{"}}
+            public:
+                virtual void makeSound() {{"{"}}
+                    cout << "This is an animal sound." << endl;
+                {{"}"}}
+            {{"}"}};
+            
+            class Dog : public Animal {{"{"}}
+            public:
+                void makeSound() {{"{"}}
+                    cout << "Woof! Woof!" << endl;
+               {{" }"}}
+            {{"}"}};
+            
+            class Cat : public Animal {{"{"}}
+            public:
+                void makeSound() {{"{"}}
+                    cout << "Meow! Meow!" << endl;
+                {{"}"}}
+            {{"}"}};
+            
+            int main() {{"{"}}
+                Animal* animal1 = new Dog();
+                Animal* animal2 = new Cat();
+            
+                animal1->makeSound(); // Output: Woof! Woof!
+                animal2->makeSound(); // Output: Meow! Meow!
+            
+                delete animal1;
+                delete animal2;
+                return 0;
+            {{"}"}}
+             
     </code>
 </pre>
+<p>
+    In this code, we define a base class  Animal  with a virtual function  makeSound() .
+ We then define two derived classes  Dog  and  Cat  that override the  makeSound()  function with their own implementation.
+</p>
+<p>In the  main()  function, we create two  Animal  pointers that point to objects of the  Dog  and  Cat  classes respectively.
+</p>
+We then call the  makeSound()  function on each pointer, which will call the appropriate implementation based on the actual type of the object being pointed to.
+
+<p>
+    This demonstrates polymorphism in action, as we are able to treat objects of different classes ( Dog  and  Cat ) as if they are objects of the same class ( Animal ) and use them interchangeably.
+</p>

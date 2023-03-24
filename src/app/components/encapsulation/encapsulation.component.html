@@ -21,36 +21,36 @@
     within the class and control how they can be accessed from outside the class.
 </p>
 <h6>Here's an Example.</h6>    
-<pre  class="line-numbers">
+<pre  class="line-numbers code-block d-block">
     <code>
         
 #include &lt;iostream&gt;
     using namespace std;
     
-    <!-- class BankAccount {
+    class BankAccount {{"{"}}
     private:
         int accountNumber;
         double balance;
     
     public:
-        void setAccountNumber(int num) {
+        void setAccountNumber(int num) {{"{"}}
             accountNumber = num;
-        }
+        {{"}"}}
     
-        int getAccountNumber() {
+        int getAccountNumber() {{"{"}}
             return accountNumber;
-        }
+        {{"}"}}
     
-        void setBalance(double bal) {
+        void setBalance(double bal) {{"{"}}
             balance = bal;
-        }
+        {{"}"}}
     
-        double getBalance() {
+        double getBalance() {{"{"}}
             return balance;
-        }
-    };
+        {{"}"}}
+    {{"}"}};
     
-    int main() {
+    int main() {{"{"}}
         BankAccount myAccount;
         myAccount.setAccountNumber(12345);
         myAccount.setBalance(1000.0);
@@ -58,7 +58,7 @@
         cout &lt;&lt; "Account Number: " &lt;&lt; myAccount.getAccountNumber() &lt;&lt; endl;
         cout &lt;&lt; "Balance: $" &lt;&lt; myAccount.getBalance() &lt;&lt; endl;
         return 0;
-    "}" -->
+    {{"} "}}
     </code> 
  </pre>
  <video width="420" height="340" controls style="text-align:center;">

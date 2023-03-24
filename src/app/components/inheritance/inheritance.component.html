@@ -1,1 +1,96 @@
-<p>inheritance works!</p>
+<h3>
+    Inheritance
+
+</h3>
+<p>
+    Inheritance is a feature in C++ that allows a class to inherit the properties and behaviors of another class. The class that is being inherited from in called the base class,
+ while the class that is inheriting from the base class is called the derived class 
+</p>
+
+To create a derived class in C++ use the syntax below:
+
+<pre class="code-block">
+    <code>
+        class DerivedClass: accessSpecifier
+BaseClass {{"{"}}
+  //class members and methods
+{{"}"}}
+    </code>
+</pre>
+
+<p>
+    The access specifier can be either  public ,  protected , or  private  and determines how the derived class can access the members of the base class.
+
+</p>
+<p>
+    In public inheritance, the public members of the base class become public members of the derived class,
+ the protected members of the base class become protected members of the derived class,
+ and the private members of the base class are not accessible by the derived class.
+</p>
+
+<p>
+    In Protected inheritance, the public and protected members of the base class become protected members of the derived class,
+ and the private members of the base class are not accessible by the derived class.
+</p>
+
+<p>
+    In Private Inheritance, the protected and public members of the class become private members of the derived class,
+ and the protected members of the base class are not accessible by the derived class.
+</p>
+
+In C++, there are three types of inheritance:
+
+<p>
+    1. Single inheritance: In single inheritance, a derived class inherits the properties of only one base class.
+ The derived class inherits the data members and member functions of the base class.
+</p>
+
+2. Multiple inheritance: In multiple inheritance, a derived class can inherit the properties of more than one base class.
+ This means that the derived class has multiple base classes and it can access the data members and member functions of all of them.
+
+3. Multilevel inheritance: In multilevel inheritance, a derived class is created from another derived class.
+ This means that the base class for the derived class is itself a derived class. In this type of inheritance, the properties of the first derived class are inherited by the second derived class, and so on.
+
+<pre class="code-block">
+    <code>
+        // Base class
+class Animal {{"{"}}
+public:
+    void eat() {{"{"}}
+        cout << "Animal is eating." << endl;
+    {{"}"}}
+{{"}"}};
+
+// Derived class
+class Dog : 
+public Animal {{"{"}}
+
+public:
+    void bark() {{"{"}}
+        cout << "Dog is barking." << endl;
+    {{"}"}}
+{{"}"}};
+
+int main() {{"{"}}
+    // Create an object of Dog class
+    Dog myDog;
+
+    // Call methods of the derived class
+    myDog.bark();
+
+    // Call methods of the base class
+    myDog.eat();
+
+    return 0;
+{{"}"}}
+    </code>
+</pre>
+ 
+
+<p>
+    In this example, the  Dog  class is derived from the  Animal  class using the  public  access modifier.
+This means that all public members of the  Animal  class are accessible from the  Dog  class.
+The  Dog  class adds a new public method  bark()  in addition to the  eat()  method inherited from the  Animal  class. 
+</p>
+
+In the  main()  function, an object of the  Dog  class is created and the  bark()  and  eat()  methods are called on it. The  bark()  method is a method of the  Dog  class, while the  eat()  method is inherited from the Animal class.
