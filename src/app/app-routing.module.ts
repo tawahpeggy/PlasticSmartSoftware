@@ -19,6 +19,7 @@ import { PolymorphismComponent } from './components/polymorphism/polymorphism.co
 import { LinuxComponent } from './components/setup/linux/linux.component';
 import { MaccComponent } from './components/setup/macc/macc.component';
 import { WindowsComponent } from './components/setup/windows/windows.component';
+import { StructureComponent } from './components/structure/structure.component';
 import { VariableComponent } from './components/variable/variable.component';
 import { VectorComponent } from './components/vector/vector.component';
 import { WhileLoopComponent } from './components/while-loop/while-loop.component';
@@ -31,6 +32,7 @@ const routes: Routes = [
   {  path: 'functions', component: FunctionComponent},
   {  path: 'vectors', component: VectorComponent},
   {  path: 'pointers', component: PointersComponent},
+  {  path: 'structures', component: StructureComponent},
   {  path: 'datatypes', component: DataTypeComponent},
   {  path: 'variables', component: VariableComponent},
   {  path: 'for', component: ForLoopComponent},

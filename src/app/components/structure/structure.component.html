@@ -1,0 +1,71 @@
+<h3>STRUCTURES IN C++
+</h3>
+<p>
+    
+Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure.
+Unlike an array, a structure can contain many different data types (int, string, bool, etc.).
+</p>
+<h5>Declaring a Structure in the C++ programming.
+</h5>
+<p>The struct keyword is used to declare structures in C++ followed by an identifier (name of the structure) and then curly braces. Iinside the curly braces,
+     you can declare one or more members (declare variables inside curly braces) of that structure. 
+</p>
+For example:
+<pre class="code-block">
+    <code>
+        Struct Person
+ {{"{"}}
+Char name [50]
+Int age;
+Float salary;
+{{"}"}};
+    </code>
+</pre>
+ <p>Explanation: Here a structure called Persons has been defined which has as members name, age and salary.
+</p><br>
+
+<h5>    Accessing Structure Members
+</h5>
+<p>To access members of a structure, use the dot syntax (.)
+
+Look at the code snippet below: 
+</p>
+// Create a structure variable called myStructure
+<pre class="code-block">
+    <code>
+        struct {{"{"}}
+ int myNum;
+ string myString;
+{{"}"}} myStructure;
+    </code>
+</pre>
+
+// Assign values to members of myStructure
+<pre class="code-block">
+    <code>
+        myStructure.myNum = 1;
+myStructure.myString = "Hello World!";
+    </code>
+</pre>
+
+// Print members of myStructure
+<pre class="code-block">
+    <code>
+        cout << myStructure.myNum << "\n";
+cout << myStructure.myString << "\n";
+    </code>
+</pre>
+
+<h5> One Structure in Multiple Variables
+</h5>
+You can use a comma (,) to use one structure in many variables:
+<pre class="code-block">
+    <code>
+        
+struct {{"{"}}
+int myNum;
+string myString;
+{{"} "}}
+myStruct1, myStruct2, myStruct3; // Multiple structure variables separated with commas
+    </code>
+</pre>

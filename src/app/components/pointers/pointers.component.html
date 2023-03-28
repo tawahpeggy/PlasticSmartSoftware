@@ -1,1 +1,186 @@
-<p>pointers works!</p>
+<h3>C++ Pointers</h3>
+<p>
+  C++, pointers are variables that store the memory addresses of other
+  variables.
+</p>
+<p>
+  A pointer variable points to a data type (like int or string) of the same
+  type, and is created with the * operator. The address of the variable you are
+  working with is assigned to the pointer.
+</p>
+Look at the code snippet below:
+<pre class="code-block">
+    <code>
+    string drinks = "Fanta";  // A drinks variable of type string
+    string* ptr = &amp;drinks;    // A pointer variable, with the name ptr, that stores the address of drinks
+    // Output the value of drinks (Fanta)
+
+    cout << drinks << "\n";
+    </code>
+    </pre>
+<pre class="code-block">
+        <code>
+// Output the memory address of drinks (0x6dfed4)
+    cout << &drinks << "\n";
+    </code>
+</pre>
+
+<pre class="code-block">
+    <code>
+        // Output the memory address of drinks with the pointer (0x6dfed4)
+         cout << ptr << "\n";
+    </code>
+</pre>
+
+<h5>Explanation of above code:</h5>
+<p>
+  Create a pointer variable with the name <b>ptr</b>, that points to a string
+  variable, by using the asterisk sign <b>* (string* ptr)</b> . Note that the
+  type of the pointer has to match the type of the variable you are working
+  with.
+</p>
+<p>
+  Use the <b>&</b> operator to store the memory address of the variable called
+  drinks, and assign it to the pointer. Now, ptr holds the value of the drinks'
+  memory address.
+</p>
+<h5>Ways of declaring pointers</h5>
+There are three ways of declaring pointers, but the first is the most preferred.
+They are:
+<ul>
+  <li>string* mystring; // Preferred</li>
+  <li>string *mystring;</li>
+  <li>string * mystring;</li>
+</ul>
+<br />
+Note: The <b>*</b> operator is used after the data type to declare pointers.
+<br /><br />
+<h5>Assigning Addresses to Pointers</h5>
+<pre class="code-block">
+    <code>
+        int* pointVar, var;
+        var = 5;
+    </code>
+</pre>
+
+// assign address of var to pointVar pointers
+<pre class="code-block">
+    <code>
+        pointVar = &amp;var;
+    </code>
+</pre>
+ Here, 5 is assigned to the variable var. And, the address of var is assigned to the
+pointVar pointer with the code 
+<pre class="code-block">
+    <code>
+        pointVar = &var.
+    </code>
+</pre>
+<h5> Get the Value from the Addres Using Pointers.
+</h5>
+<pre class="code-block">
+    <code>
+        int* pointVar, var; var = 5; // assign address of var to pointVar.
+        pointVar = &amp;var;
+    </code>
+</pre>
+<h5>access value pointed by pointVar
+</h5>
+<pre class="code-block">
+    <code>
+        cout << *pointVar << endl;   // Output: 5
+    </code>
+</pre>
+<p>
+  n the above code, the address of var is assigned to pointVar. We have used the
+  <b>*pointVar</b> to get the value stored in that address.
+</p>
+<p>
+  When <b>*</b> is used with pointers, it's called the dereference operator. It
+  operates on a pointer and gives the value pointed by the address stored in the
+  pointer. That is, *pointVar = var
+</p>
+<h5>How C++ Pointers work.</h5>
+Find below a code snippet to show the working of pointers in C++
+
+<pre class="code-block">
+    <code>
+        
+#include &lt;iostream&gt;
+using namespace std;
+int main() {{"{"}}
+    int var = 5;
+
+    // declare pointer variable
+    int* pointVar;
+
+    // store address of var
+    pointVar = &amp;var;
+
+    // print value of var
+    cout << "var = " << var << endl;
+
+    // print address of var
+    cout << "Address of var (&var) = " << &var << endl
+         << endl;
+
+    // print pointer pointVar
+    cout << "pointVar = " << pointVar << endl;
+
+    // print the content of the address pointVar points to
+    cout << "Content of the address pointed to by pointVar (*pointVar) = " << *pointVar << endl;
+    
+    return 0;
+{{"}"}}
+    </code>
+</pre>
+
+Output var = 5 Address of var (&var) = 0x61ff08 pointVar = 0x61ff08 Content of
+the address pointed to by pointVar (*pointVar) = 5
+
+<h5>Modifying the values of pointers.</h5>
+<pre>
+    <code>
+        string food ="Pizza";
+string* ptr = &amp;food;
+    </code>
+</pre>
+
+// Output the value of food (Pizza)
+<pre class="code-block">
+    <code>
+        cout << food << "\n";
+
+    </code>
+</pre>
+// Output the memory address of food (0x6dfed4)
+<pre class="code-block">
+    <code>
+        cout << &food << "\n";
+    </code>
+</pre>
+// Access the memory address of food and output its value (Pizza)
+<pre class="code-block">
+    <code>
+        cout << *ptr << "\n";
+
+    </code>
+</pre>
+// Change the value of the pointer
+<pre class="code-block">
+    <code>
+        *ptr = "Hamburger";
+    </code>
+</pre>
+Output the new value of the pointer (Hamburger)
+<pre>
+    <code>
+        cout << *ptr << "\n"; 
+    </code>
+</pre>
+Output the new value of the food variable (Hamburger)
+<pre>
+    <code>
+        cout << food << "\n";
+    </code>
+</pre>

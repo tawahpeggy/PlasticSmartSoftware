@@ -29,6 +29,7 @@ import { FunctionComponent } from './components/function/function.component';
 import { VectorComponent } from './components/vector/vector.component';
 import { DataTypeComponent } from './components/data-type/data-type.component';
 import { VariableComponent } from './components/variable/variable.component';
+import { StructureComponent } from './components/structure/structure.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { VariableComponent } from './components/variable/variable.component';
     FunctionComponent,
     VectorComponent,
     DataTypeComponent,
-    VariableComponent
+    VariableComponent,
+    StructureComponent
   ],
   imports: [
     BrowserModule,
