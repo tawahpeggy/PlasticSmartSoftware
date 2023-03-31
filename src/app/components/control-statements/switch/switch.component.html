@@ -1,1 +1,41 @@
-<p>switch works!</p>
+switch statement: It is used to compare a value with various cases and execute the corresponding block of code. 
+
+<pre>
+    <code>
+        switch (variable) {{"{"}}
+            case value1:
+              // code to be executed if variable matches value1
+              break;
+            case value2:
+              // code to be executed if variable matches value2
+              break;
+            ...
+            default:
+              // code to be executed if variable does not match any value
+              break;
+          {{"}"}}
+    </code>
+</pre>
+Example.
+<pre class="code-block">
+    <code>
+        int day = 3;
+switch(day)
+{{"{"}}
+   case 1:
+      std::cout << "Monday";
+      break;
+   case 2:
+      std::cout << "Tuesday";
+      break;
+   case 3:
+      std::cout << "Wednesday";
+      break;
+   default:
+      std::cout << "Invalid day";
+{{"}"}}
+    </code>
+</pre>
+
+
+Note: The break statement is used to exit the switch statement after a case has been executed, otherwise, it will continue executing the following cases.
