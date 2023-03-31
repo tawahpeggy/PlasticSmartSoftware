@@ -4,6 +4,11 @@ import { AboutComponent } from './components/about/about.component';
 import { AbstractionComponent } from './components/abstraction/abstraction.component';
 import { ClassComponent } from './components/class/class.component';
 import { CommentsComponent } from './components/comments/comments.component';
+import { ConditionalsComponent } from './components/control-statements/conditionals/conditionals.component';
+import { ElseIfComponent } from './components/control-statements/else-if/else-if.component';
+import { IfElseComponent } from './components/control-statements/if-else/if-else.component';
+import { IfStatementComponent } from './components/control-statements/if-statement/if-statement.component';
+import { SwitchComponent } from './components/control-statements/switch/switch.component';
 import { DataTypeComponent } from './components/data-type/data-type.component';
 import { DoWhileLoopComponent } from './components/do-while-loop/do-while-loop.component';
 import { EncapsulationComponent } from './components/encapsulation/encapsulation.component';
@@ -26,6 +31,11 @@ import { WhileLoopComponent } from './components/while-loop/while-loop.component
 import { BlogComponent } from './pages/blog/blog.component';
 
 const routes: Routes = [
+  {  path: 'conditionals', component: ConditionalsComponent},
+  {  path: 'if', component: IfStatementComponent},
+  {  path: 'ifelse', component: IfElseComponent},
+  {  path: 'elseif', component: ElseIfComponent},
+  {  path: 'switch', component: SwitchComponent},
   {  path: 'helloworld', component: HelloWorldComponent},
   {  path: 'encapsulation', component: EncapsulationComponent},
   {  path: 'loops', component: LoopsComponent},
@@ -49,7 +59,7 @@ const routes: Routes = [
   {  path: 'windows', component: WindowsComponent},
   {  path: 'linux', component: LinuxComponent},
   {  path: 'macc', component: MaccComponent},
-  { path: 'C', component: BlogComponent}
+  { path: '', component: AboutComponent}
 ];
 
 @NgModule({

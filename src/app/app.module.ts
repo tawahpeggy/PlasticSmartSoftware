@@ -30,6 +30,11 @@ import { VectorComponent } from './components/vector/vector.component';
 import { DataTypeComponent } from './components/data-type/data-type.component';
 import { VariableComponent } from './components/variable/variable.component';
 import { StructureComponent } from './components/structure/structure.component';
+import { IfStatementComponent } from './components/control-statements/if-statement/if-statement.component';
+import { IfElseComponent } from './components/control-statements/if-else/if-else.component';
+import { ElseIfComponent } from './components/control-statements/else-if/else-if.component';
+import { SwitchComponent } from './components/control-statements/switch/switch.component';
+import { ConditionalsComponent } from './components/control-statements/conditionals/conditionals.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +65,12 @@ import { StructureComponent } from './components/structure/structure.component';
     VectorComponent,
     DataTypeComponent,
     VariableComponent,
-    StructureComponent
+    StructureComponent,
+    IfStatementComponent,
+    IfElseComponent,
+    ElseIfComponent,
+    SwitchComponent,
+    ConditionalsComponent
   ],
   imports: [
     BrowserModule,

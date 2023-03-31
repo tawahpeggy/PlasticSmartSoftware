@@ -1,1 +1,98 @@
-<p>vector works!</p>
+<h3>C++ Vectors</h3>
+<p>
+  In C++, a vector is a dynamic container that allows you to store and
+  manipulate elements in an efficient manner. Here are some notes on vectors in
+  C++:
+</p>
+
+<h5>Creating a vector</h5>
+<p>
+  You can create a vector by declaring it and specifying the type of elements it
+  will hold. For example, you can create a vector of integers as follows:
+</p>
+<pre class="code-block">
+        <code>
+            #include &lt;vector&gt;
+            std::vector&lt;int&gt; my_vector;
+        </code>
+    </pre>
+<h5>Adding elements</h5>
+
+<p>You can add elements to a vector using the push_back method. For example:</p>
+<pre class="code-block">
+    <code>
+            my_vector.push_back(1);
+            my_vector.push_back(2);
+            my_vector.push_back(3); 
+    </code>
+ </pre>
+
+<h5>Accessing elements</h5>
+<p>
+  Accessing elements You can access elements in a vector using the square
+  brackets operator.
+</p>
+For example:
+
+<pre class="code-block">
+        <code>
+            std::cout << my_vector[0]; // Prints 1
+            std::cout << my_vector[1]; // Prints 2
+        </code>
+     </pre>
+
+<h5>Vector size</h5>
+<p>You can get the size of a vector by calling its size() method.</p>
+For example:
+
+<pre class="code-block">
+    <code>
+        std::cout << my_vector.size(); // Prints 3
+    </code>
+</pre>
+
+<h5>Vector iteration</h5>
+<p>You can iterate over a vector using a range-based for loop.</p>
+For example:
+
+<pre class="code-block">
+    <code>
+        for (int i : my_vector) {{"{"}}
+            std::cout << i << std::endl;
+        {{"}"}}
+        
+    </code>
+   </pre>
+
+<h5>Removing elements</h5>
+<p>You can remove elements from a vector by calling its erase method.</p>
+For example:
+
+<pre class="code-block">
+    <code>
+        my_vector.erase(my_vector.begin() + 1); // Removes element at index 1
+
+    </code>
+</pre>
+
+
+<h5>Sorting elements</h5>
+<p>
+  You can sort the elements in a vector using the sort function in the
+  &lt;algorithm&gt; library.
+</p>
+For example:
+
+<pre class="code-block">
+    <code>
+        #include &lt;algorithm&gt;
+
+        std::sort(my_vector.begin(), my_vector.end());
+    </code>
+  </pre>
+<p>
+  These are just a few of the most commonly used functions and operations
+  associated with vectors in C++. There are many other methods you can use to
+  manipulate and access vector elements, so it's a good idea to consult the
+  documentation to learn more.
+</p>
