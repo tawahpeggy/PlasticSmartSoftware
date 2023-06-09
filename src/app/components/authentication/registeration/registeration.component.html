@@ -1,0 +1,19 @@
+<body>
+    <div class="registration-container">
+    <form (ngSubmit)="registerUser()" #registrationForm="ngForm" class="registration-form">
+        <h2>Registration</h2>
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Name" id="name" name="name" [(ngModel)]="user.name" required>
+          <label for="phoneNumber">Phone Number:</label>
+          <input placeholder="Phone Number" class="registration-input" type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="user.phoneNumber" required>
+          <label for="email">Email:</label>
+          <input placeholder="Email" class="registration-input" type="email" id="email" name="email" [(ngModel)]="user.email" required>
+          <label for="password">Password:</label>
+          <input placeholder="Password" class="registration-input" type="password" id="password" name="password" [(ngModel)]="user.password" required>
+          <label class="registration-input" for="confirmPassword">Re-enter Password:</label>
+          <input placeholder="Re-enter Password" type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="user.confirmPassword" required>
+        
+        <button class="registration-input" type="submit" [disabled]="!registrationForm.form.valid">Register</button>
+      </form>
+      </div>
+</body>

@@ -1,0 +1,104 @@
+header {
+    background-color: #009900;
+    color: #FFFFFF;
+    padding: 25px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .hero-section {
+    background-image: url('../../../assets/pollution.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    
+    
+  }
+  
+  .content-section {
+    background-color: #000000db;
+    color: #FFFFFF;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #000000db;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-section h3 {
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-section a {
+    color: #FFFFFF;
+  }
+  
+  .footer-section form input,
+  .footer-section form button {
+    margin: 5px 0;
+  }
+  
+  .footer-section form input[type="text"],
+  .footer-section form input[type="email"] {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .footer-section form button {
+    background-color: #009900;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .registration-button {
+    padding: 10px 20px;
+    background-color: #009900;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .registration-button:hover {
+    background-color: #00FF00;
+  }
+  .h1{
+    display: inline-block;
+
+  }
+  .small-footer {
+    background-color: #009900;
+  }

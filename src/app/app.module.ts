@@ -35,6 +35,11 @@ import { IfElseComponent } from './components/control-statements/if-else/if-else
 import { ElseIfComponent } from './components/control-statements/else-if/else-if.component';
 import { SwitchComponent } from './components/control-statements/switch/switch.component';
 import { ConditionalsComponent } from './components/control-statements/conditionals/conditionals.component';
+import { RegisterationComponent } from './components/authentication/registeration/registeration.component';
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/authentication/login/login.component';
+import { DonationComponent } from './components/donation/donation.component';
 
 @NgModule({
   declarations: [
@@ -70,11 +75,17 @@ import { ConditionalsComponent } from './components/control-statements/condition
     IfElseComponent,
     ElseIfComponent,
     SwitchComponent,
-    ConditionalsComponent
+    ConditionalsComponent,
+    RegisterationComponent,
+    HomeComponent,
+    LoginComponent,
+    DonationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

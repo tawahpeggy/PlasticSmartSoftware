@@ -1,0 +1,12 @@
+<body>
+    <div class="login-container">
+    <form (ngSubmit)="loginUser()" #loginForm="ngForm" class="login-form">
+        <h2>login</h2>
+          <label for="phoneNumber">Phone Number:</label>
+          <input placeholder="677289085" pattern="[0-9]+" class="login-input" type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="user.phoneNumber" required>
+          <input placeholder="Password" class="login-input" type="password" id="password" name="password" [(ngModel)]="user.password" required>
+        
+        <button class="login-input" type="submit" [disabled]="!loginForm.form.valid">Login</button>
+      </form>
+      </div>
+</body>
