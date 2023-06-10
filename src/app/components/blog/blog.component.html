@@ -1,0 +1,14 @@
+<app-header></app-header>
+
+<div class="row m-2 p-3">
+    <div class="col-md-6 p-5"  *ngFor="let blog of blogs">
+      <div class="card">
+        <img  height="300" src="{{ blog.image }}" alt="{{ blog.title }}">
+        <div class="card-body">
+            <h5>{{ blog.title }}</h5>
+          <p>{{ blog.description }}</p>
+          <a routerLink = "{{ blog.link }} " class="text-success"><b> Continuing Reading</b></a></div>
+        </div>
+      </div>
+    </div>
+<app-footer></app-footer>

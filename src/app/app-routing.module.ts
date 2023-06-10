@@ -12,6 +12,7 @@ import { RegisterationComponent } from './components/authentication/registeratio
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/authentication/login/login.component';
 import { DonationComponent } from './components/donation/donation.component';
+import { BlogComponent } from './components/blog/blog.component';
 // import { SwitchComponent } from './components/control-statements/switch/switch.component';
 // import { DataTypeComponent } from './components/data-type/data-type.component';
 // import { DoWhileLoopComponent } from './components/do-while-loop/do-while-loop.component';
@@ -60,13 +61,14 @@ const routes: Routes = [
   // {  path: 'classes', component: ClassComponent},
   // {  path: 'about', component: AboutComponent},
   // {  path: 'comments', component: CommentsComponent},
-  // {  path: 'windows', component: WindowsComponent},
+  {  path: 'blogList', component: BlogComponent},
   {  path: 'donate', component: DonationComponent},
   {  path: ' ', component: HomeComponent},
   { path: 'register', component: RegisterationComponent},
   { path: 'login', component: LoginComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+
 ];
 
 @NgModule({

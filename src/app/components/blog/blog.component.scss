@@ -1,0 +1,31 @@
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .blog-card {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .blog-header {
+    text-align: center;
+  }
+  
+  .blog-content {
+    margin-top: 10px;
+  }
+  
+  .blog-content img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .blog-content p {
+    margin-top: 10px;
+  }
+  

@@ -7,7 +7,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { BlogComponent } from './pages/blog/blog.component';
 import { ContentComponent } from './components/content/content.component';
 import { EncapsulationComponent } from './components/encapsulation/encapsulation.component';
 import { AboutComponent } from './components/about/about.component';
@@ -40,6 +39,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/authentication/login/login.component';
 import { DonationComponent } from './components/donation/donation.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +48,6 @@ import { DonationComponent } from './components/donation/donation.component';
     HeaderComponent,
     FooterComponent,
     HomePageComponent,
-    BlogComponent,
     ContentComponent,
     EncapsulationComponent,
     AboutComponent,
@@ -79,7 +78,8 @@ import { DonationComponent } from './components/donation/donation.component';
     RegisterationComponent,
     HomeComponent,
     LoginComponent,
-    DonationComponent
+    DonationComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
