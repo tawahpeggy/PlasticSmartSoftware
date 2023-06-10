@@ -25,16 +25,16 @@ constructor() {
       link: 'asdjjf'
 
     }, {
-      title: 'Blog 1',
-      description: 'This is the first blog',
+      title: 'The Economics of Plastic Pollution: Costs and Benefits of Sustainable Practices',
+      description: 'Plastic pollution has become a global environmental crisis, affecting ecosystems, wildlife, and human health....',
       image: '../../../assets/pollution3.jpg',
       link: 'asdjjf'
 
     },
     {
-      title: 'Blog 2',
-      description: 'This is the second blog',
-      image: 'path-to-image-2.jpg',
+      title: '"The Life Cycle of Plastic: From Production to Disposal"',
+      description: 'Plastic has become an integral part of our modern lives, but its widespread use has led to significant environmental challenges...',
+      image: '../../../assets/pollution4.jpg',
       link: 'asdjjf'
 
     }
